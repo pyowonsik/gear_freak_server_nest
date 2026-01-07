@@ -22,4 +22,4 @@ config/AuthKey_*.p8
 config/google_client_secret.json
 
 # Environment variables (direnv)
-.envrc
+.env
