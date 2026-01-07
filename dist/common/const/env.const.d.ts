@@ -1,0 +1,24 @@
+export declare const envVariableKeys: {
+    env: string;
+    buildTarget: string;
+    dbType: string;
+    dbUrl: string;
+    hashRounds: string;
+    accessTokenSecret: string;
+    refreshTokenSecret: string;
+    kakaoClientId: string;
+    kakaoClientSecret: string;
+    naverClientId: string;
+    naverClientSecret: string;
+    googleClientId: string;
+    googleClientSecret: string;
+    awsAccessKeyId: string;
+    awsSecretAccessKey: string;
+    awsRegion: string;
+    s3PublicBucket: string;
+    s3PrivateBucket: string;
+    fcmProjectId: string;
+    fcmServiceAccountPath: string;
+    redisHost: string;
+    redisPort: string;
+};

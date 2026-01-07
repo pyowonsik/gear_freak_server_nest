@@ -1,0 +1,26 @@
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: gear_freak_nestjs_db
+    ports:
+      - '5433:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: gear_freak_nestjs
+      POSTGRES_PASSWORD: 'Ato9x5Fa2G8cmcD_D6QuQ_7OToqwU7Zc'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  # Redis (Optional - for future caching)
+  redis:
+    image: redis:7-alpine
+    container_name: gear_freak_nestjs_redis
+    ports:
+      - '6380:6379'
+    command: redis-server --requirepass "KtY1Brzm-d5l66wYVN3PsowAmKzM2EiR"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
