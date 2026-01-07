@@ -1,1 +1,25 @@
+# Files and directories created by pub
+.dart_tool/
+.packages
+
+# Conventional directory for build outputs
+build/
+
+# Directory created by dartdoc
+doc/api/
+
+# Passwords file
+config/passwords.yaml
+
+# Firebase service account key for Firebase auth
+config/firebase_service_account_key.json
 config/fcm-service-account.json
+
+# APNs authentication key for FCM iOS push notifications
+config/AuthKey_*.p8
+
+# Google OAuth client secret for Serverpod Auth
+config/google_client_secret.json
+
+# Environment variables (direnv)
+.envrc
